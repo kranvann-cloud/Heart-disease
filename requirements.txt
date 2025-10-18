@@ -1,0 +1,6 @@
+numpy
+streamlit
+joblib
+pickle
+sklearn
+scikit-learn==1.6.1
