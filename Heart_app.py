@@ -40,7 +40,9 @@ user_input = {
 
 # Convert the dictionary to a pandas DataFrame
 # Ensure the order of columns matches the training data
-input_df = pd.DataFrame([user_input], columns=X_train.columns)
+input_df = pd.DataFrame([user_input], columns=['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 
+                 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 
+                 'ca', 'thal'])
 prediction = model.predict(input_df)
 
 # Display the prediction
